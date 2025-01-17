@@ -1,0 +1,105 @@
+*{
+
+    font-family: "Rubik Dirt", serif;
+    margin: 0px;
+    padding: 0px;
+ color: aliceblue;
+ background-color: #03001e;
+}
+
+html, body{
+    height:100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,
+        1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    min-height: 100vh;
+    width: 100%;
+    margin:0 auto;
+    padding: 1rem;
+    grid-template-areas: 
+    "header header header header" 
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box5"
+    "box6 box4 box5 box5"
+    "box6 box7 box5 box5"
+    "footer footer footer footer"
+    
+
+}
+
+.header{
+    grid-area: header;
+    border: 1px black solid;
+        border-radius: 5px;
+            display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: capitalize;
+    background:linear-gradient(to right, red, yellow);
+       font-size: 2rem;         
+    
+}
+
+.box{
+    border:1px black solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    
+    text-align: center;
+    background:radial-gradient( blue, purple, red);
+}
+
+
+
+.box1{
+    grid-area: box1;
+}
+
+.box2{
+    grid-area: box2;
+}
+
+.box3{
+    grid-area: box3;
+}
+
+
+.box4{
+    grid-area: box4;
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.box5{
+    grid-area: box5;
+    background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+}
+
+
+.box6{
+    grid-area: box6;
+}
+
+.box7 {
+    grid-area: box7;
+    
+}
+
+.footer{
+    grid-area: footer;
+    border: 1px black solid;
+    border-radius: 5px;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: capitalize;
+        
+     background: linear-gradient(to right, rgb(7, 255, 7), rgb(0, 0, 210));       
+}
