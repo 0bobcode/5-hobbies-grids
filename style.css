@@ -34,19 +34,19 @@ html, body{
 
 .header{
     grid-area: header;
-    border: 1px black solid;
+    
         border-radius: 5px;
             display: flex;
                 align-items: center;
                 justify-content: center;
                 text-transform: capitalize;
     background:linear-gradient(to right, red, yellow);
-       font-size: 2rem;         
+            
     
 }
 
 .box{
-    border:1px black solid;
+    
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -94,7 +94,7 @@ html, body{
 
 .footer{
     grid-area: footer;
-    border: 1px black solid;
+   
     border-radius: 5px;
         display: flex;
             align-items: center;
